@@ -1,0 +1,8 @@
+DELETE http://localhost:3030/delete/contact/1234
+# Content-Type: application/json
+
+# {
+#     "name":"charan",
+#     "id":"1234",
+#     "number":"6305927349"
+# }
