@@ -3,16 +3,17 @@ const path = require("path");
 const cors = require("cors")
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
-const port = process.env.PORT || 3030
+const port = process.env.PORT || 3002
 
 
 const { open } = require("sqlite");
 const sqlite3 = require("sqlite3");
 const app = express();
 app.use(express.json())
-app.use(cors({
-    origin:"http://localhost:3004"
-}))
+app.use(cors())
+// app.use(cors({
+//     origin:"http://localhost:3004"
+// }))
 const dbPath = path.join(__dirname, "database.db");
 
 let db = null;
